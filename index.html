@@ -1,0 +1,469 @@
+<!DOCTYPE html><html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Sedot WC Putra Ragil</title><style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+
+    min-height:100vh;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url("https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1920&q=85");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    padding:25px;
+
+    color:white;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:bold;
+    margin-bottom:20px;
+
+    text-shadow:
+    2px 3px 8px rgba(0,0,0,0.8);
+}
+
+.hero p{
+    font-size:22px;
+    line-height:1.7;
+    margin-bottom:30px;
+
+    text-shadow:
+    1px 2px 6px rgba(0,0,0,0.8);
+}
+
+.btn{
+    display:inline-block;
+
+    background:#25D366;
+    color:white;
+
+    padding:16px 30px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-size:19px;
+    font-weight:bold;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.3);
+
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    background:#1ebe5d;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:75px 20px;
+}
+
+.title{
+    text-align:center;
+
+    font-size:38px;
+
+    color:#003b8e;
+
+    margin-bottom:45px;
+}
+
+
+/* ================= STATISTIK ================= */
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+}
+
+.stat-box{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+.stat-box:hover{
+    transform:translateY(-5px);
+}
+
+.stat-box h2{
+
+    font-size:50px;
+
+    color:#003b8e;
+
+    margin-bottom:8px;
+}
+
+
+/* ================= LAYANAN ================= */
+
+.services{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+}
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card-icon{
+
+    font-size:45px;
+
+    margin-bottom:15px;
+}
+
+.card h3{
+
+    color:#003b8e;
+
+    font-size:23px;
+
+    margin-bottom:12px;
+}
+
+.card p{
+
+    line-height:1.6;
+
+    color:#555;
+}
+
+
+/* ================= AREA ================= */
+
+.area{
+
+    background:#003b8e;
+
+    color:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.15);
+}
+
+.area h3{
+
+    font-size:28px;
+
+    margin-bottom:15px;
+}
+
+.area ul{
+
+    margin-left:20px;
+
+    font-size:19px;
+
+    line-height:2;
+
+    margin-bottom:30px;
+}
+
+.map{
+
+    width:100%;
+
+    height:450px;
+
+    border:0;
+
+    border-radius:15px;
+}
+
+
+/* ================= KONTAK ================= */
+
+.kontak{
+
+    text-align:center;
+
+    background:white;
+
+    padding:80px 20px;
+}
+
+.kontak p{
+
+    font-size:19px;
+
+    margin-bottom:30px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:#001f4d;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px 20px;
+}
+
+footer h3{
+
+    font-size:25px;
+
+    margin-bottom:10px;
+}
+
+footer p{
+
+    margin:7px;
+}
+
+
+/* ================= WHATSAPP ================= */
+
+.wa-float{
+
+    position:fixed;
+
+    bottom:20px;
+    right:20px;
+
+    background:#25D366;
+
+    color:white;
+
+    padding:15px 22px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.3);
+
+    z-index:999;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    .hero{
+        min-height:100vh;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .title{
+        font-size:30px;
+    }
+
+    .container{
+        padding:55px 15px;
+    }
+
+    .area{
+        padding:25px 20px;
+    }
+
+    .map{
+        height:350px;
+    }
+
+}
+
+</style></head><body><!-- HERO --><section class="hero"><div class="hero-content"><h1>
+SEDOT WC PUTRA RAGIL
+</h1><p>
+Melayani Sedot WC, Sedot Septic Tank,
+Saluran Mampet dan kebutuhan sanitasi.
+<br><br>📍 Kabupaten Semarang • Salatiga
+<br>
+
+⏰ Siap Melayani 24 Jam
+
+</p><a
+href="https://wa.me/6285727452060"
+class="btn">
+
+💬 WhatsApp 0857 2745 2060
+
+</a></div></section><!-- KEUNGGULAN --><section class="container"><h2 class="title">
+Mengapa Memilih Kami?
+</h2><div class="stats"><div class="stat-box">
+<h2>5+</h2>
+<p>Tahun Pengalaman</p>
+</div><div class="stat-box">
+<h2>500+</h2>
+<p>Pelanggan</p>
+</div><div class="stat-box">
+<h2>24/7</h2>
+<p>Siap Melayani</p>
+</div><div class="stat-box">
+<h2>100%</h2>
+<p>Pelayanan Profesional</p>
+</div></div></section><!-- LAYANAN --><section class="container"><h2 class="title">
+Layanan Kami
+</h2><div class="services"><div class="card"><div class="card-icon">
+🚛
+</div><h3>
+Sedot WC
+</h3><p>
+Mengatasi WC penuh dan septic tank
+yang sudah penuh dengan pelayanan
+cepat dan profesional.
+</p></div><div class="card"><div class="card-icon">
+🛢️
+</div><h3>
+Sedot Septic Tank
+</h3><p>
+Penyedotan septic tank rumah,
+kos, tempat usaha dan bangunan lainnya.
+</p></div><div class="card"><div class="card-icon">
+🔧
+</div><h3>
+Saluran Mampet
+</h3><p>
+Mengatasi saluran air dan saluran
+limbah rumah tangga yang mampet.
+</p></div><div class="card"><div class="card-icon">
+🏠
+</div><h3>
+Pasang Septic Tank
+</h3><p>
+Pemasangan septic tank baru dan
+perbaikan septic tank.
+</p></div></div></section><!-- AREA --><section class="container"><h2 class="title">
+Area Layanan
+</h2><div class="area"><h3>
+Kami Melayani:
+</h3><ul><li>Ungaran</li>
+<li>Ambarawa</li>
+<li>Bawen</li>
+<li>Kota Semarang</li>
+<li>Salatiga</li>
+<li>Suruh</li>
+<li>Kabupaten Semarang</li>
+<li>Daerah Sekitarnya</li></ul><iframe
+class="map"
+src="https://maps.google.com/maps?q=Kabupaten%20Semarang&t=&z=10&ie=UTF8&iwloc=&output=embed"
+loading="lazy">
+</iframe></div></section><!-- KONTAK --><section class="kontak"><h2 class="title">
+Hubungi Kami Sekarang
+</h2><p>
+Respon Cepat • Harga Terjangkau •
+Siap 24 Jam
+</p><a
+href="https://wa.me/6285727452060"
+class="btn">
+
+💬 Chat WhatsApp Sekarang
+
+</a></section><!-- FOOTER --><footer><h3>
+Sedot WC Putra Ragil
+</h3><p>
+Kabupaten Semarang - Jawa Tengah
+</p><p>
+WhatsApp : 0857 2745 2060
+</p><p>
+Melayani 24 Jam
+</p></footer><!-- WHATSAPP MELAYANG --><a
+href="https://wa.me/6285727452060"
+class="wa-float">
+
+💬 WhatsApp
+
+</a></body>
+</html>
